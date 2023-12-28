@@ -7,8 +7,15 @@
 
 using namespace std;
 
+
+/**
+ * @brief  volatile_ringbuffer implementation for avr microcontrollers
+ *          
+ * @note         
+ * @retval None
+ */
 template<typename T>
-struct ringbuffer
+struct volatile_ringbuffer
 {
 private: 
     volatile T* array;
